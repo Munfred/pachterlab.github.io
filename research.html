@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <meta name="author" content="Lior Pachter" />
+        <!-- design by Nicholas Eriksson -->
+        <meta name="keywords" content="Computational biology" />
+        <meta name="description" content="" />
+        <meta name="robots" content="all" />
+        <title>Pachter Lab</title>
+        <style type="text/css" media="all">
+            @import "style.css";
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+      <div id="container">
+          <div class="Header">
+            <div id="logos">
+              <a href="http://www.caltech.edu/"><img src="Caltech_LOGO-WHITE-RGB.png" alt = "Caltech logo" width=150 /></a>
+              <p><span>Pachter Lab</span></p>
+            </div>
+              <div id="Menu">
+                 <ul id="links">
+                     <li><a href="index.html" title="Home">Home</a></li>
+                     <li><a href="group.html" title="Group">Group</a></li>
+                     <li><a href="research.html" title="Research" class="current-page">Research</a></li>
+                     <li><a href="software.html" title="Software">Software</a></li>
+                     <li><a href="positions.html" title="Positions">Positions</a></li>
+                     <li><a href="contact.html" title="Contact">Contact</a></li>
+                     <li><a href="https://scholar.google.com/citations?user=DKfEcuEAAAAJ&hl=en&oi=ao" title="Publications">Publications <i class="fa fa-external-link" style="font-size:10px"></i> </a></li>
+                     <li><a href="http://liorpachter.wordpress.com/" title="Blog">Blog <i class="fa fa-external-link" style="font-size:10px"></i> </a></li>
+                 </ul>
+             </div>
+             <!-- end Menu-->
+            </div>
+            <!-- end Header-->
+
+            <h1> <dt>Research highlights</dt> </h1>
+            <div id="Content">
+                <div class="research-interests">
+                <h2><dt> Single cell data preprocessing  </dt></h2>
+                <img src="bus_runtime_performance.png" alt="bus runtime" height="200" align="right" >
+                <p>The analysis of single-cell RNA-Seq data involves a series of steps that include: (1) pre-processing of reads to associate them with their cells of origin, (2) possible collapsing of reads according to unique molecular identifiers (UMIs), (3) generation of feature counts from the reads to generate a feature-cell matrix and (4) analysis of the matrix to compare and contrast cells.</p>
+
+                <p>Some of these challenges are procedurally straightforward but computationally demanding. Others are are statistical in nature and require technology specific models. We have recently introduced a format for single-cell RNA-seq data called the BUS (Barcode, UMI, Set) format that facilitates the development of modular workflows to address the complexities of these challenges. It is described in <a href="https://doi.org/10.1093/bioinformatics/btz279">The Barcode, UMI, Set format and BUStools</a> (Bioinformatics 2019). </p>
+
+                <p>BUS files can be generated from single-cell RNA-seq data produced with any technology and can, in principle, be produced by any pseudoalignment software. We have implemented a command in <a href="http://pachterlab.github.io/kallisto//releases/2018/11/17/v0.45.0">kallisto v0.45.0</a> called bus that allows for the efficient generation of BUS format from any single-cell RNA-seq technology. Tools for manipulating BUS files are provided as part of the <a href="https://bustools.github.io/">bustools</a> package. Finally, <a href="https://github.com/BUStools/BUS_notebooks_R">R</a> and <a href="https://github.com/BUStools/BUS_notebooks_python">python</a> notebooks for processing and analyzing BUS files simplify and facilitate the process of developing and optimizing analysis workflows.</p>
+                </div>
+                <br>
+                <div class="research-interests">
+                    <h2> <dt>Open source hardware for bioinstrumentation </dt></h2>
+                    <img src="poseidon_system_render.png" alt="poseidon system"  height="200" align="right">
+
+                    <p>We are interested in the development of open source hardware with a focus on instruments used in the wetlab.</p>
+
+                    <p>Our first open source hardware project is the <a href="https://pachterlab.github.io/poseidon/">poseidon syringe pump and microscope system </a>, an alternative to commercial systems that costs less than $400 and can be assembled in an hour. It uses 3D printed parts and common components that can be easily purchased either from Amazon or other retailers. The microscope and pumps can be used together in microfluidics experiments, or independently for other applications. The pumps and microscope can be run from a computer or Raspberry Pi with an easy to use GUI.</p>
+
+                    <p>As we developed the poseidon system, our goal was not only to make a good piece of hardware, but also to have a system that would be easy for other people to build and contribute to. Code, files and documentation were made available on GitHub throughout development, and we were happy to see that people discovered and <a href="https://github.com/pachterlab/poseidon/graphs/contributors">contributed</a> to the project even before it was posted on <a href="https://www.biorxiv.org/content/10.1101/521096v1">bioRxiv<a>! The guidelines we developed, together with a brief story of the project are described in the blog post <a href="https://liorpachter.wordpress.com/2019/01/18/open-sourcing-bioinstruments/"> Open sourcing bioinstruments</a>.</p>
+                    <br>
+
+                <div class="research-interests">
+                    <h2> <dt>Single cell experimental methods</dt></h2>
+                    <img src="multiplexing_concept.jpeg" alt="poseidon system"  height="200" align="right">
+
+                    <p>Together with computation methods, we are interested in the development of new <i>experimental</i> methods for single cell RNA-seq.</p>
+
+                    <p>Our first experimental protocol enables universal sample multiplexing method for single-cell RNA-seq in which methanol fixed cells are chemically labeled with identifying DNA tags. The tagging mechanism uses a click chemistry one-pot, two-step reaction. The complete method, together with the demonstration of a 96-plex perturbation experiment, is described in the 2018 bioRxiv preprint <a href="https://www.biorxiv.org/content/10.1101/315333v1"> Highly Multiplexed Single-Cell RNA-seq for Defining Cell Population and Transcriptional Spaces</a>.</p>
+
+                    <p> A quick overview of the method and generated data is described in the blog post <a href="https://liorpachter.wordpress.com/2019/01/18/open-sourcing-bioinstruments/"> The benefits of multiplexing</</a>.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

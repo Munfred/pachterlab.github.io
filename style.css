@@ -1,0 +1,190 @@
+#container {
+	margin: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding: 10px;
+	background:#fff;
+}
+
+.Header {
+	padding: 5px;
+	margin-bottom: 5px;
+/*	background-color: rgb(213, 219, 225); */
+/*	background-color: #A0BDD3; */
+	background-color: #FF6E1E;
+	color: #FFFFFF;
+	/* height: 10%; */
+	/* width: 60%; */
+}
+
+.Header span {
+/* the main title */
+	font-size: 20pt;
+
+
+	/*font-variant: small-caps;*/
+}
+
+.Header img {
+/* Caltech logo */
+	float:right;
+}
+
+#logos {
+	list-style-type: none;
+	padding:1px 1px 1px 20px;
+	/* margin:0px 0px 5px 10%; */
+	background:transparent;
+}
+
+#Content {
+	padding-top: 5px;
+	/* width: 60%; */
+	margin: 0 0 0 10px;
+/*	background-color: gray; */
+	background-color: #ffffff;
+	/* float:left; */
+	line-height: 1.4;
+}
+
+#Content p {
+/* make the paragraphs of text a bit more readable */
+	line-height: 1.5;
+	letter-spacing: 0.01em;
+
+}
+
+#Footer {
+	clear: both;
+	padding: 3px;
+	margin-top: 5px;
+/*	background-color: rgb(213, 230, 155);*/
+/*	background-color: rgb(178, 198, 145); */
+	background-color: #76777B;
+	font-size: 80%;
+        height: 4em;
+}
+
+/* ignored by IE -- this is the correct height */
+html>body #Footer {
+	height: auto;
+}
+
+#Picture {
+/* a box on the right for pictures, etc */
+	float:left;
+	width: 35%;
+/*	margin: 5px;*/
+	padding: 5px;
+	text-align: center;
+}
+
+h3 {
+	border-bottom: 1px solid #ccc;
+}
+
+ul#News  {
+	list-style-type: square;
+	text-align: left;
+	padding-left: 2em;
+	/*list-style-image: url(/LI-markers/checkmark.gif)*/
+}
+
+ul#News li {
+	padding-bottom:10px;
+}
+
+body {
+	font: 11pt Candara, "News Gothic MT", "Bitstream Vera Sans", Verdana, Trebuchet, "Trebuchet MS", sans-serif;
+#rgb(45, 40, 45);
+	color:#000000;
+}
+
+ul#links {
+	list-style-type: none;
+	padding:1px 1px 1px 10px;
+	/* margin:0px 0px 5px 10%; */
+	background:transparent;
+}
+
+ul#links li {
+	display: inline;
+/*	font-size: 10pt;  if choosing the larger font size */
+}
+
+#links a, #links a:visited {
+	/* color:#000000; */
+	text-decoration:none;
+/*  display:block; */
+	padding:0.2em 0.8em 0.2em 0.8em;
+	/* background: #47a;*/
+	/* background: #F1D384; */
+  /*border: 1px solid black;*/
+}
+
+#links a:hover {
+	color:#000000;
+	/* background: #FFFFFF; */
+	text-decoration:underline;
+}
+
+.ptitle {
+	/*line-height: 1; */
+	padding-top: 5px;
+	/*font-weight: bold;*/
+}
+
+.pinfo {
+	font-size:90%;
+	margin-left: 50px;
+}
+
+.pauthors {
+	font-size:90%;
+	margin-left: 25px;
+}
+
+.current-page {
+	/* font-size:200%; */
+	font-weight:bolder;
+	color: blue;
+
+}
+
+.research {
+	font-size:90%;
+	font-style: italic;
+	margin-left: 10px;
+}
+
+#Content dt {
+	font-weight:bold;
+	border-bottom: 1px solid #ccc;
+}
+
+#Content dd {
+	margin-left: 10px;
+}
+
+a:hover {
+/*        background: #258; */
+/* background-color:#F1D384; */
+/* text:underline; */
+}
+
+a:link{
+	/* color:#000000; */
+	color: black !important;
+	text-decoration:underline;
+}
+a:visited {
+	text-decoration: underline;
+	color: black !important;
+/*	color: #820000; */
+	/* color: #000000; */
+/*	color: #ff00da; bright pink */
+}
+
+a:visited:hover {
+/*	color: white;  */
+}
